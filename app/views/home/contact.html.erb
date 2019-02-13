@@ -1,0 +1,30 @@
+<div class="bg-light mt-2 pt-5 pb-5">
+  <div class="contact-form mx-auto">
+    <h1 class="text-center">CONTACT</h1>
+    <%= form_for(@contact, url: home_afford_path) do |f| %>
+      <div class="form-group">
+        <%= f.label :name %><br />
+        <%= f.text_field :name, autofocus: true, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :subject %><br />
+        <%= f.text_field :subject, autofocus: true, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :message %><br />
+        <%= f.text_area :message, autofocus: true, class: 'form-control', rows: 10 %>
+      </div>
+
+       <div class="actions form-group">
+        <%= f.submit "Send", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+</div>
