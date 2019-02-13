@@ -1,0 +1,9 @@
+{
+    "editor.tabSize": 2,
+    "files.associations": {
+        "*.erb": "erb"
+    },
+    "emmet.includeLanguages": {
+        "erb": "html"
+    }
+}
